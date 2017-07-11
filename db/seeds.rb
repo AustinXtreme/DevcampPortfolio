@@ -14,6 +14,8 @@
   )
 end
 
+puts "10 blog posts created"
+
 5.times do |skill|
   Skill.create!(
       title:"Rails #{skill}",
@@ -44,3 +46,11 @@ puts "5 skills created"
   end  
   
  puts "9 portfolio items created"
+ 
+ 3.times do |technology|
+   Portfolio.last.technologies.create!(
+     name: "Technology #{Technology}",
+     )
+  end
+  
+  puts "3 technologies created"
