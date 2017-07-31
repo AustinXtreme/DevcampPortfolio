@@ -8,10 +8,9 @@ class User < ApplicationRecord
 
   def first_name
     self.name.split.first
-  end  
+  end
 
   def last_name
     self.name.split.last
-  end  
-  
+  end
 end
