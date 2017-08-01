@@ -15,4 +15,9 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-gretting")
     end
   end
+ 
+  
+  def copyright_generator
+    AxtremeViewTool::Renderer.copyright 'Austin Tolman', 'All rights reserved'
+  end
 end
