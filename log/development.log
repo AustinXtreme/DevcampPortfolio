@@ -13294,3 +13294,119 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 87ms (Views: 84.5ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 205.122.46.204 at 2017-08-01 17:50:33 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 689ms (Views: 643.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 17:51:15 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 149ms (Views: 146.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 17:53:14 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered shared/_application_nav.html.erb (1.3ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+out me ", about_me_path class: "nav-link" );@output_buffer.s
+                              ^
+/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:6: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Contact ", contact_path class: "nav-link" );@output_buffer.s
+                              ^
+/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+o " Blogs ", blogs_path class: "nav-link" );@output_buffer.s
+                              ^
+/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:8: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+lios ", portfolios_path class: "nav-link" );@output_buffer.s
+                              ^):
+  
+app/views/shared/_application_nav.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/shared/_application_nav.html.erb:6: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/shared/_application_nav.html.erb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/shared/_application_nav.html.erb:8: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb__956124983231382936_70188489858420'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.3ms)
+Started GET "/" for 205.122.46.204 at 2017-08-01 17:54:01 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+out me ", about_me_path class: 'nav-link' );@output_buffer.s
+                              ^
+/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:6: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+Contact ", contact_path class: 'nav-link' );@output_buffer.s
+                              ^
+/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+o " Blogs ", blogs_path class: 'nav-link' );@output_buffer.s
+                              ^
+/home/ubuntu/workspace/devCPortfolio/app/views/shared/_application_nav.html.erb:8: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+lios ", portfolios_path class: 'nav-link' );@output_buffer.s
+                              ^):
+  
+app/views/shared/_application_nav.html.erb:5: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/shared/_application_nav.html.erb:6: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/shared/_application_nav.html.erb:7: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/shared/_application_nav.html.erb:8: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:20:in `_app_views_layouts_application_html_erb__956124983231382936_70188526023880'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.7ms)
+Started GET "/" for 205.122.46.204 at 2017-08-01 17:54:19 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 137ms (Views: 134.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 17:56:02 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 201ms (Views: 198.7ms | ActiveRecord: 0.4ms)
+
+
