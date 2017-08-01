@@ -12652,3 +12652,621 @@ Migrating to AddRolesToUsers (20170801160230)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:18:44 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (44.0ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `accessor' for #<Class:0x000000025a9540>
+Did you mean?  ancestors):
+    1: <h1>Hi, <%= current_user.first_name %></h1>
+    2: <p>Find me in app/views/pages/home.html.erb</p>
+    3: 
+    4: <h1>Blog Posts</h1>
+  
+app/models/guest_user.rb:2:in `<class:GuestUser>'
+app/models/guest_user.rb:1:in `<top (required)>'
+app/controllers/concerns/current_user_concern.rb:9:in `guest_user'
+app/controllers/concerns/current_user_concern.rb:5:in `current_user'
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__574057163548870348_20451180'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.0ms)
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:19:28 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (95.8ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 919ms (Views: 868.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/about-me" for 205.122.46.204 at 2017-08-01 16:19:47 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 257ms (Views: 254.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 205.122.46.204 at 2017-08-01 16:19:49 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (6.8ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 125ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:19:50 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (171.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (178.3ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 323ms (Views: 318.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:19:50 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.4ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 118ms (Views: 115.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:19:53 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (19.2ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 255ms (Views: 242.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:19:53 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.3ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 93ms (Views: 90.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:19:56 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (15.9ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 294ms (Views: 289.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:19:56 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (15.9ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 125ms (Views: 122.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:22:37 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (102.6ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 286ms (Views: 241.2ms | ActiveRecord: 5.1ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:30:36 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (89.0ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 787ms (Views: 698.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/login" for 205.122.46.204 at 2017-08-01 16:30:38 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (75.2ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 303ms (Views: 169.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.204 at 2017-08-01 16:30:47 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LWEbp53Z2SIL3rtd+PwAXuht5nxk7qUsd5fiJZUArDCuLByhYeDHB0+yvNaIG65vSpgcy9SeYqYQTO8xtTTGxg==", "user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test2@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LWEbp53Z2SIL3rtd+PwAXuht5nxk7qUsd5fiJZUArDCuLByhYeDHB0+yvNaIG65vSpgcy9SeYqYQTO8xtTTGxg==", "user"=>{"email"=>"test2@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.3ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 306ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-01 16:30:51 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.8ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 113ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 205.122.46.204 at 2017-08-01 16:31:54 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2RHVswsXmsKjz3wQIAxrM90iy9lhjyk+q1LVe3rPwZVaXNK19y6E5+eje5tQ68UCf9cxbtH/7rTMidhvWvurYw==", "user"=>{"email"=>"crazylady@got.com", "name"=>"Cersei Lannister", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "roles") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "crazylady@got.com"], ["encrypted_password", "$2a$11$DR6tOfo4nJnbQn3ycmSwMOY0al0X00VFVQQXbCkiOvfvtrpOXM1y."], ["name", "Cersei Lannister"], ["created_at", "2017-08-01 16:31:54.413605"], ["updated_at", "2017-08-01 16:31:54.413605"], ["roles", "user"]]
+  [1m[35m (17.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 16:31:54.439515"], ["last_sign_in_at", "2017-08-01 16:31:54.439515"], ["current_sign_in_ip", "205.122.46.204"], ["last_sign_in_ip", "205.122.46.204"], ["updated_at", "2017-08-01 16:31:54.441458"], ["id", 1]]
+  [1m[35m (18.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 239ms (ActiveRecord: 39.4ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:31:54 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (11.2ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 128ms (Views: 125.5ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "roles" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["roles", "site_admin"], ["updated_at", "2017-08-01 16:33:36.335132"], ["id", 1]]
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:43:11 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (22.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (36.4ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 558ms (Views: 504.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:43:12 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (16.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (20.0ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 98ms (Views: 92.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/new" for 205.122.46.204 at 2017-08-01 16:43:14 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/new.html.erb within layouts/blog
+  Rendered blogs/_form.html.erb (27.2ms)
+  Rendered blogs/new.html.erb within layouts/blog (30.7ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 186ms (Views: 182.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 205.122.46.204 at 2017-08-01 16:43:17 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HRCaehdGLoWPCUXMTE3Ltn+e6RqvXWAfF2JBEQz8dG+eXZ18638woMtlQkc8qmWH3WsTrR8tp5VwuUwFLMgemQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 13ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:43:17 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (91.6ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 180ms (Views: 171.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:43:20 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.3ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:43:20 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.4ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 96ms (Views: 91.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/new" for 205.122.46.204 at 2017-08-01 16:43:22 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/blogs
+Filter chain halted as #<Proc:0x00000005286a18@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:43:22 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.0ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 149ms (Views: 145.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 205.122.46.204 at 2017-08-01 16:43:30 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q7r4sniB7w3SSX3Ye9gd4Xh4yuSfuStR+BURFQElkTB4HxN4+vbIOYKVzdozVPaMBu1XbjK6pnaJcRheRWD8zA=="}
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:43:30 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.7ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-01 16:43:35 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 205.122.46.204 at 2017-08-01 16:44:38 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SasupIuXKlUNvKXhJFgh1kWTMfvoILHQtUol5nlLsu1yDsVuCeANYV1gFeNs1Mq7OwascUUjPPfELiytPQ7fEQ==", "user"=>{"email"=>"thebestever@got.com", "name"=>"Euron Greyjoy", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "thebestever@got.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "roles") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "thebestever@got.com"], ["encrypted_password", "$2a$11$By5hyhaZcUKjvabarWZj3eCAKwZtoPbpb/M2HE.Cwb0sXa5BneJO."], ["name", "Euron Greyjoy"], ["created_at", "2017-08-01 16:44:39.009178"], ["updated_at", "2017-08-01 16:44:39.009178"], ["roles", "user"]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-01 16:44:39.026296"], ["last_sign_in_at", "2017-08-01 16:44:39.026296"], ["current_sign_in_ip", "205.122.46.204"], ["last_sign_in_ip", "205.122.46.204"], ["updated_at", "2017-08-01 16:44:39.029036"], ["id", 2]]
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 252ms (ActiveRecord: 28.4ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:44:39 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (10.0ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 104ms (Views: 100.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:44:42 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.6ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 92ms (Views: 88.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:44:42 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.7ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 94ms (Views: 84.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/new" for 205.122.46.204 at 2017-08-01 16:44:44 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/blogs
+Filter chain halted as #<Proc:0x00000005286a18@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:44:44 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (96.0ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 194ms (Views: 189.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 205.122.46.204 at 2017-08-01 16:47:40 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.2ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 301ms (Views: 294.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:51:03 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (6.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 193ms (Views: 146.3ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:51:04 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.0ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 225ms (Views: 221.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:55:47 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (2.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.0ms)
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 178ms (Views: 172.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolio/1" for 205.122.46.204 at 2017-08-01 16:55:59 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (187.0ms)
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 301ms (Views: 287.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/angular-items" for 205.122.46.204 at 2017-08-01 16:56:28 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#angular as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/angular.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."subtitle" = ?[0m  [["subtitle", "Angular"]]
+  Rendered portfolios/angular.html.erb within layouts/portfolio (3.7ms)
+  Rendered shared/_nav.html.erb (2.3ms)
+Completed 200 OK in 115ms (Views: 109.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolio/9" for 205.122.46.204 at 2017-08-01 16:56:35 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 9]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (83.7ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 277ms (Views: 269.3ms | ActiveRecord: 1.5ms)
+
+
+Started DELETE "/logout" for 205.122.46.204 at 2017-08-01 16:56:43 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2s7GNqwFOosNYv0qVwwU5zzEtHH8h1JqdyPL90ZD1Yrhay38LnIdv12+TSgfgP+KQlEp+1GE300GR8K8Aga4dg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:56:44 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (56.8ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 177ms (Views: 158.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/login" for 205.122.46.204 at 2017-08-01 16:56:46 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 226ms (Views: 224.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.204 at 2017-08-01 16:56:56 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lOSx4AXshs+zw1vfB377YGgP7skSGx9aPAuOgyGgqK/rC0wZoHr/gJ49qxfdvLZWLdQY9sGNIlB4dlTztsBpUw==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-08-01 16:56:57.081540"], ["sign_in_count", 2], ["updated_at", "2017-08-01 16:56:57.083556"], ["id", 1]]
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 174ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-01 16:56:57 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (12.9ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 111ms (Views: 107.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:56:59 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (8.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.1ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 219ms (Views: 133.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolios" for 205.122.46.204 at 2017-08-01 16:56:59 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (20.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (8.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (12.7ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 169ms (Views: 143.2ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/portfolio/1" for 205.122.46.204 at 2017-08-01 16:57:03 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (75.3ms)
+  Rendered shared/_nav.html.erb (9.9ms)
+Completed 200 OK in 567ms (Views: 551.4ms | ActiveRecord: 0.9ms)
+
+
