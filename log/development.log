@@ -14553,3 +14553,226 @@ Processing by Devise::RegistrationsController#edit as HTML
 Completed 200 OK in 4015ms (Views: 4010.1ms | ActiveRecord: 0.6ms)
 
 
+Started DELETE "/logout" for 205.122.46.204 at 2017-08-02 16:59:46 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3YZV5XrnUJ+Itmcv76P6Z16fNNI+e5qjNni6cSwUx6sd7lDB7MvTwrxgg0pknmoMsVQCeryyUZGo2iPpLmWBjg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 55ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 205.122.46.204 at 2017-08-02 16:59:46 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (25.0ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 635ms (Views: 608.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 16:59:51 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.0ms)
+  Rendered shared/_application_nav.html.erb (2.9ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 262ms (Views: 259.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:04:35 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 135.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:09:54 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.8ms)
+  Rendered shared/_application_nav.html.erb (2.5ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 216ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:09:56 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 231ms (Views: 225.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:15:07 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+  Rendered shared/_application_nav.html.erb (3.0ms)
+  Rendered shared/_application_footer.html.erb (0.8ms)
+Completed 200 OK in 166ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:29:12 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.2ms)
+  Rendered shared/_application_nav.html.erb (2.7ms)
+  Rendered shared/_application_footer.html.erb (0.8ms)
+Completed 200 OK in 161ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:33:32 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.5ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 129ms (Views: 126.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:35:51 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.8ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 4972ms (Views: 4964.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:38:29 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.0ms)
+  Rendered shared/_application_nav.html.erb (2.9ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 118ms (Views: 114.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:38:48 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.9ms)
+  Rendered shared/_application_nav.html.erb (2.5ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 181ms (Views: 179.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:39:12 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.0ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 214ms (Views: 212.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:39:15 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 212ms (Views: 210.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:39:27 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 149ms (Views: 146.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:40:06 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.3ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 109.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:42:48 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.3ms)
+  Rendered shared/_application_nav.html.erb (3.0ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 237ms (Views: 234.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:43:06 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.2ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:43:23 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.0ms)
+  Rendered shared/_application_nav.html.erb (2.5ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 156ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.204 at 2017-08-02 17:45:21 +0000
+Cannot render console from 205.122.46.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+  Rendered shared/_application_nav.html.erb (2.5ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 130.8ms | ActiveRecord: 0.0ms)
+
+
