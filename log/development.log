@@ -14776,3 +14776,128 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 133ms (Views: 130.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 71.195.223.151 at 2017-08-02 20:28:41 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (43.8ms)
+  Rendered shared/_application_nav.html.erb (11.2ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 866ms (Views: 793.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 20:28:43 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 108ms (Views: 98.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 71.195.223.151 at 2017-08-02 20:28:54 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wqU0OE2yye6vYY76mCaK5kVlqAVQMr6vQ5xF+MPoeN9NG/nvz/ri3ra5AT71+SKEIK3CFtCF6MP5HrHR1eZygw=="}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 40ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 20:28:54 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (30.7ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+  Rendered shared/_application_footer.html.erb (1.0ms)
+Completed 200 OK in 143ms (Views: 140.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 20:28:55 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.4ms)
+  Rendered shared/_application_nav.html.erb (2.6ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 160.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 23:19:59 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 221ms (Views: 207.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 23:23:03 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_application_nav.html.erb (2.6ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 4419ms (Views: 4415.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 23:24:30 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 3138ms (Views: 3135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 23:28:40 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_application_nav.html.erb (2.8ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 128ms (Views: 125.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password/new" for 71.195.223.151 at 2017-08-02 23:28:42 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (10.8ms)
+  Rendered shared/_application_nav.html.erb (3.3ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 275ms (Views: 271.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/password" for 71.195.223.151 at 2017-08-02 23:28:47 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/8tv9vXGleyJb9LeVMfCYacU7VRL1HClWfq0AWW/K/K20eu8ur8ai+YXuNc4g2zgt6uCyvqF3YabGrGaekMrxg==", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (5.4ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 108ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
