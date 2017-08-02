@@ -13410,3 +13410,256 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 201ms (Views: 198.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 71.195.223.151 at 2017-08-02 01:17:35 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+Completed 200 OK in 645ms (Views: 601.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 01:17:42 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 71.195.223.151 at 2017-08-02 01:18:10 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 200 OK in 208ms (Views: 204.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 71.195.223.151 at 2017-08-02 01:18:11 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (6.7ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+Completed 200 OK in 138ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-02 01:18:12 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (38.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (55.3ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 212ms (Views: 207.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-02 01:18:13 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.4ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 98ms (Views: 93.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 71.195.223.151 at 2017-08-02 01:18:23 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (9.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (23.4ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 126ms (Views: 109.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/portfolios" for 71.195.223.151 at 2017-08-02 01:18:23 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (9.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (13.2ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about-me" for 71.195.223.151 at 2017-08-02 01:18:29 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 71.195.223.151 at 2017-08-02 01:18:29 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+Completed 200 OK in 80ms (Views: 77.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 01:18:30 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 01:23:05 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered shared/_application_nav.html.erb (2.7ms)
+  Rendered shared/_application_footer.html.erb (0.9ms)
+Completed 200 OK in 319ms (Views: 315.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 01:29:22 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered shared/_application_nav.html.erb (77.1ms)
+  Rendered shared/_application_footer.html.erb (0.9ms)
+Completed 200 OK in 224ms (Views: 174.4ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 01:30:46 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (48.4ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 152ms (Views: 131.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 02:20:35 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 129ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 02:21:27 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (2.7ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 3895ms (Views: 3892.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 02:21:42 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 3229ms (Views: 3226.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 02:21:59 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  Rendered shared/_application_nav.html.erb (2.4ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 3985ms (Views: 3982.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 02:22:57 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.6ms)
+  Rendered shared/_application_nav.html.erb (4.0ms)
+  Rendered shared/_application_footer.html.erb (1.2ms)
+Completed 200 OK in 223ms (Views: 217.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-02 02:22:57 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered shared/_application_nav.html.erb (2.2ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 71.195.223.151 at 2017-08-02 02:23:17 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yLFOyKOyzOqbUkY/bSiB/jl0ZHveCaV9pCaqfhKwAa5OVCHgBwsvXfkCASmXbBif1iIZq7iZtYjSBqBCGs/yKg==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-08-02 02:23:17.799923"], ["last_sign_in_at", "2017-08-01 16:56:57.081540"], ["current_sign_in_ip", "71.195.223.151"], ["sign_in_count", 3], ["updated_at", "2017-08-02 02:23:17.803095"], ["id", 1]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 224ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 02:23:17 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_application_nav.html.erb (3.5ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 80.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for 71.195.223.151 at 2017-08-02 02:23:27 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JYha/8dEi0tl0pekVSWATVBS9ZhMZeHNxmf3skrAAznBQawKoe8yDAyTegw+ZWT1ChJexN6JGrq2KtvM3I/TYQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-02 02:23:27 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.0ms)
+
+
