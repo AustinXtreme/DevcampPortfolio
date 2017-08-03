@@ -14901,3 +14901,43 @@ Processing by Devise::PasswordsController#create as HTML
 Completed 200 OK in 108ms (Views: 93.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/blogs" for 71.195.223.151 at 2017-08-03 03:24:30 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (28.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (51.4ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 699ms (Views: 615.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-03 03:24:31 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 96ms (Views: 92.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-03 03:36:19 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (21.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (43.6ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 233ms (Views: 158.9ms | ActiveRecord: 3.3ms)
+
+
