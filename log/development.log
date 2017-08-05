@@ -15139,3 +15139,105 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 121ms (Views: 115.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/blogs" for 71.195.223.151 at 2017-08-05 18:44:17 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (7.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (36.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (60.8ms)
+  Rendered shared/_blog_nav.html.erb (1.5ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 562ms (Views: 472.0ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-05 18:47:20 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.0ms)
+  Rendered shared/_application_nav.html.erb (2.5ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 136ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 71.195.223.151 at 2017-08-05 18:47:21 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 71.195.223.151 at 2017-08-05 18:47:36 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ugWLnyTDAHe5y559vhXVYA/ADQrGBVxTYAp2gSb8vMXzHw/Va7qPENaz9HTSUXvhH39ilHdU8XCi6nMaOQC88Q==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2017-08-05 18:47:37.094531"], ["updated_at", "2017-08-05 18:47:37.096111"], ["id", 1]]
+  [1m[35m (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 6], ["current_sign_in_at", "2017-08-05 18:47:37.113291"], ["last_sign_in_at", "2017-08-02 14:07:20.349172"], ["current_sign_in_ip", "71.195.223.151"], ["last_sign_in_ip", "205.122.46.204"], ["updated_at", "2017-08-05 18:47:37.114765"], ["id", 1]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 207ms (ActiveRecord: 22.4ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-05 18:47:37 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.3ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 74.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-05 18:47:42 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (20.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (22.9ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 116ms (Views: 111.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-05 18:47:43 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.5ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 113ms (Views: 109.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 71.195.223.151 at 2017-08-05 18:57:18 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (28.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (31.3ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 105ms (Views: 99.3ms | ActiveRecord: 1.2ms)
+
+
