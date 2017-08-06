@@ -16989,3 +16989,237 @@ Migrating to AddPositionToPortfolios (20170806203312)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 2], ["updated_at", "2017-08-06 20:39:36.961034"], ["id", 1]]
   [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 71.195.223.151 at 2017-08-06 20:54:36 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (27.3ms)
+  Rendered shared/_application_nav.html.erb (3.5ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 5098ms (Views: 5053.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-06 20:54:53 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 125.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-06 20:55:20 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 211ms (Views: 209.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-06 20:56:03 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.9ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 104.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 71.195.223.151 at 2017-08-06 21:07:34 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (25.5ms)
+Started GET "/portfolios" for 71.195.223.151 at 2017-08-06 21:07:41 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Completed 500 Internal Server Error in 9056ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: jquery-ui-rails.
+Load paths:
+  /home/ubuntu/workspace/devCPortfolio/app/assets/config
+  /home/ubuntu/workspace/devCPortfolio/app/assets/images
+  /home/ubuntu/workspace/devCPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devCPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devCPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devCPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content="<%= @seo_keywords %>" />
+    11:     
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/portfolios.scss:2
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2365804866813573839_69870931588280'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.7ms)
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (2.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (2.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (19.0ms)
+Completed 500 Internal Server Error in 1042ms (ActiveRecord: 3.8ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: jquery-ui-rails.
+Load paths:
+  /home/ubuntu/workspace/devCPortfolio/app/assets/config
+  /home/ubuntu/workspace/devCPortfolio/app/assets/images
+  /home/ubuntu/workspace/devCPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devCPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devCPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devCPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets):
+     8: 
+     9:     <meta name="keywords" content="<%= @seo_keywords %>" />
+    10: 
+    11:     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/assets/stylesheets/portfolios.scss:2
+app/views/layouts/portfolio.html.erb:11:in `_app_views_layouts_portfolio_html_erb___2309860224829094949_69870645993960'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.0ms)
+Started GET "/" for 71.195.223.151 at 2017-08-06 21:08:03 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 3374ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'HTML.sortable' with type 'application/javascript'
+Checked in these paths: 
+  /home/ubuntu/workspace/devCPortfolio/app/assets/config
+  /home/ubuntu/workspace/devCPortfolio/app/assets/images
+  /home/ubuntu/workspace/devCPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devCPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devCPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devCPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/bootstrap-4.0.0.alpha6/assets/javascripts):
+     9:     
+    10:     <meta name="keywords" content="<%= @seo_keywords %>" />
+    11:     
+    12:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___2365804866813573839_69870640926100'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.9ms)
+Started GET "/" for 71.195.223.151 at 2017-08-06 21:08:47 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (3.9ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 2073ms (Views: 2070.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 71.195.223.151 at 2017-08-06 21:09:00 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (2.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (5.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.5ms)
+Completed 200 OK in 312ms (Views: 307.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 71.195.223.151 at 2017-08-06 21:09:01 +0000
+Cannot render console from 71.195.223.151! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (2.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (4.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.5ms)
+Completed 200 OK in 257ms (Views: 251.2ms | ActiveRecord: 2.5ms)
+
+
