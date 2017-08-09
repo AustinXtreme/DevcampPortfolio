@@ -39533,3 +39533,799 @@ Processing by PortfoliosController#new as HTML
 Completed 200 OK in 309ms (Views: 301.0ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/portfolios/new" for 205.122.46.139 at 2017-08-09 15:53:44 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PortfoliosController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/new.html.erb within layouts/portfolio
+  Rendered portfolios/_form.html.erb (54.8ms)
+  Rendered portfolios/new.html.erb within layouts/portfolio (59.5ms)
+  Rendered shared/_portfolio_nav.html.erb (7.8ms)
+  Rendered shared/_portfolio_footer.html.erb (1.3ms)
+Completed 200 OK in 1442ms (Views: 1335.8ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/portfolios" for 205.122.46.139 at 2017-08-09 15:54:08 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RITtg7+XWWke018DCJC55iQZFoC+Soy8v9+afuHjK+tYW9Wam9YynTkkfmcXRLeSWU8D2web2bb8TO4RSfW/zQ==", "portfolio"=>{"title"=>"asd", "subtitle"=>"asd", "main_image"=>#<ActionDispatch::Http::UploadedFile:0x007f3de442d230 @tempfile=#<Tempfile:/tmp/RackMultipart20170809-19625-1g8h8ga.jpg>, @original_filename="Penguins.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"portfolio[main_image]\"; filename=\"Penguins.jpg\"\r\nContent-Type: image/jpeg\r\n">, "body"=>"asd", "technologies_attributes"=>{"0"=>{"name"=>"asd"}, "1"=>{"name"=>"asd"}, "2"=>{"name"=>"asd"}}}, "commit"=>"Save Portfolio Item"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering portfolios/new.html.erb within layouts/portfolio
+  Rendered portfolios/_form.html.erb (5.4ms)
+  Rendered portfolios/new.html.erb within layouts/portfolio (6.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.2ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 350ms (Views: 317.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/portfolios" for 205.122.46.139 at 2017-08-09 15:54:14 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UZbsPZ/pC6K0rxketCQXGm+lrmJlUhVnHDpJijoW0ElNSdQku6hgVpNYOHqr8BluEvO7OdyDQG1fqT3lkgBEbw==", "portfolio"=>{"title"=>"asd", "subtitle"=>"asd", "body"=>"asd", "technologies_attributes"=>{"0"=>{"name"=>"asd"}, "1"=>{"name"=>"asd"}, "2"=>{"name"=>"asd"}}}, "commit"=>"Save Portfolio Item"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering portfolios/new.html.erb within layouts/portfolio
+  Rendered portfolios/_form.html.erb (4.7ms)
+  Rendered portfolios/new.html.erb within layouts/portfolio (6.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 367ms (Views: 358.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 15:54:21 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [7 times] (4.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 304ms (Views: 300.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 15:57:28 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [7 times] (9.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (14.8ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 320ms (Views: 314.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolios/new" for 205.122.46.139 at 2017-08-09 15:57:36 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/new.html.erb within layouts/portfolio
+  Rendered portfolios/_form.html.erb (4.8ms)
+  Rendered portfolios/new.html.erb within layouts/portfolio (6.3ms)
+  Rendered shared/_portfolio_nav.html.erb (1.6ms)
+  Rendered shared/_portfolio_footer.html.erb (1.1ms)
+Completed 200 OK in 361ms (Views: 353.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/portfolios" for 205.122.46.139 at 2017-08-09 15:57:53 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2c9fSOqb3I15tEb67Vz1qcjFuD+PuMYf6Fq+KzOBJzzFEGdRztq3eV5DZ57yiPvdtZOtZDZpkxWrycpEm5ezGg==", "portfolio"=>{"title"=>"asd", "subtitle"=>"asd", "main_image"=>#<ActionDispatch::Http::UploadedFile:0x007f3dee479428 @tempfile=#<Tempfile:/tmp/RackMultipart20170809-19625-17qxiqs.jpg>, @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"portfolio[main_image]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n">, "thumb_image"=>#<ActionDispatch::Http::UploadedFile:0x007f3dee4793b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170809-19625-1n55qti.jpg>, @original_filename="Koala.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"portfolio[thumb_image]\"; filename=\"Koala.jpg\"\r\nContent-Type: image/jpeg\r\n">, "body"=>"asd", "technologies_attributes"=>{"0"=>{"name"=>"asd"}, "1"=>{"name"=>"asd"}, "2"=>{"name"=>"asd"}}}, "commit"=>"Save Portfolio Item"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "main_image", "thumb_image", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "asd"], ["subtitle", "asd"], ["body", "asd"], ["main_image", "Koala.jpg"], ["thumb_image", "Koala.jpg"], ["created_at", "2017-08-09 15:57:53.933514"], ["updated_at", "2017-08-09 15:57:53.933514"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "asd"], ["portfolio_id", 11], ["created_at", "2017-08-09 15:57:53.935816"], ["updated_at", "2017-08-09 15:57:53.935816"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "asd"], ["portfolio_id", 11], ["created_at", "2017-08-09 15:57:53.937792"], ["updated_at", "2017-08-09 15:57:53.937792"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "asd"], ["portfolio_id", 11], ["created_at", "2017-08-09 15:57:53.939193"], ["updated_at", "2017-08-09 15:57:53.939193"]]
+  [1m[35m (30.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/portfolios
+Completed 302 Found in 1783ms (ActiveRecord: 32.3ms)
+
+
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 15:57:55 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [8 times] (5.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (9.7ms)
+  Rendered shared/_portfolio_nav.html.erb (0.9ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 296ms (Views: 292.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolio/11" for 205.122.46.139 at 2017-08-09 15:58:45 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 11]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (5.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 366ms (Views: 355.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/portfolios/11" for 205.122.46.139 at 2017-08-09 15:58:48 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RjzvU97hhdqx6eSNnEm2hc0HA5dMOkmRDdC22A4YSoxa49dK+qDuLpYexemDnbjxsFEWzPXrHJtOQ8K3pg7eqg==", "id"=>"11"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "portfolios" WHERE "portfolios"."id" = ?[0m  [["id", 11]]
+  [1m[35m (39.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/portfolios
+Completed 302 Found in 293ms (ActiveRecord: 40.3ms)
+
+
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 15:58:49 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [7 times] (4.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 289ms (Views: 285.8ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (14.1ms)[0m  [1m[35mDROP TABLE "blogs"[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar, "status" integer DEFAULT 0, "topic_id" integer)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_blogs_on_slug" ON "blogs" ("slug")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE  INDEX "index_blogs_on_topic_id" ON "blogs" ("topic_id")[0m
+  [1m[35m (12.2ms)[0m  [1m[35mDROP TABLE "friendly_id_slugs"[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(50), "scope" varchar, "created_at" datetime)[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")[0m
+  [1m[35m (10.7ms)[0m  [1m[35mDROP TABLE "portfolios"[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "portfolios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "subtitle" varchar, "body" text, "main_image" text, "thumb_image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "position" integer)[0m
+  [1m[35m (23.5ms)[0m  [1m[35mDROP TABLE "skills"[0m
+  [1m[35m (14.0ms)[0m  [1m[35mCREATE TABLE "skills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "percent_utilized" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "badge" text)[0m
+  [1m[35m (10.6ms)[0m  [1m[35mDROP TABLE "technologies"[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "technologies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "portfolio_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE  INDEX "index_technologies_on_portfolio_id" ON "technologies" ("portfolio_id")[0m
+  [1m[35m (12.4ms)[0m  [1m[35mDROP TABLE "topics"[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (15.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (16.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "roles" varchar)[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (10.3ms)[0m  [1m[35mDROP TABLE "blogs"[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar, "status" integer DEFAULT 0, "topic_id" integer)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_blogs_on_slug" ON "blogs" ("slug")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+[0m
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE  INDEX "index_blogs_on_topic_id" ON "blogs" ("topic_id")[0m
+  [1m[35m (12.8ms)[0m  [1m[35mDROP TABLE "friendly_id_slugs"[0m
+  [1m[35m (12.5ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(50), "scope" varchar, "created_at" datetime)[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (12.9ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")[0m
+  [1m[35m (10.5ms)[0m  [1m[35mDROP TABLE "portfolios"[0m
+  [1m[35m (17.3ms)[0m  [1m[35mCREATE TABLE "portfolios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "subtitle" varchar, "body" text, "main_image" text, "thumb_image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "position" integer)[0m
+  [1m[35m (14.7ms)[0m  [1m[35mDROP TABLE "skills"[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "skills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "percent_utilized" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "badge" text)[0m
+  [1m[35m (10.9ms)[0m  [1m[35mDROP TABLE "technologies"[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "technologies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "portfolio_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE  INDEX "index_technologies_on_portfolio_id" ON "technologies" ("portfolio_id")[0m
+  [1m[35m (9.9ms)[0m  [1m[35mDROP TABLE "topics"[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (15.6ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "roles" varchar)[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170806203312)[0m
+  [1m[35m (8.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170801160230);
+
+[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Topic 0"], ["created_at", "2017-08-09 16:09:54.689147"], ["updated_at", "2017-08-09 16:09:54.689147"]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Topic 1"], ["created_at", "2017-08-09 16:09:54.705052"], ["updated_at", "2017-08-09 16:09:54.705052"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Topic 2"], ["created_at", "2017-08-09 16:09:54.719851"], ["updated_at", "2017-08-09 16:09:54.719851"]]
+  [1m[35m (38.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-0"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 0"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:54.977653"], ["updated_at", "2017-08-09 16:09:54.977653"], ["slug", "my-blog-post-0"], ["topic_id", 3]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 1"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.006610"], ["updated_at", "2017-08-09 16:09:55.006610"], ["slug", "my-blog-post-1"], ["topic_id", 3]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 2"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.032939"], ["updated_at", "2017-08-09 16:09:55.032939"], ["slug", "my-blog-post-2"], ["topic_id", 3]]
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (1.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-3"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 3"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.052154"], ["updated_at", "2017-08-09 16:09:55.052154"], ["slug", "my-blog-post-3"], ["topic_id", 3]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 4"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.069671"], ["updated_at", "2017-08-09 16:09:55.069671"], ["slug", "my-blog-post-4"], ["topic_id", 3]]
+  [1m[35m (26.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-5"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 5"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.110148"], ["updated_at", "2017-08-09 16:09:55.110148"], ["slug", "my-blog-post-5"], ["topic_id", 3]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-6"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 6"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.133721"], ["updated_at", "2017-08-09 16:09:55.133721"], ["slug", "my-blog-post-6"], ["topic_id", 3]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.1ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-7"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 7"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.158032"], ["updated_at", "2017-08-09 16:09:55.158032"], ["slug", "my-blog-post-7"], ["topic_id", 3]]
+  [1m[35m (10.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-8"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 8"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.176110"], ["updated_at", "2017-08-09 16:09:55.176110"], ["slug", "my-blog-post-8"], ["topic_id", 3]]
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[35mSQL (2.6ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 9"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:09:55.231296"], ["updated_at", "2017-08-09 16:09:55.231296"], ["slug", "my-blog-post-9"], ["topic_id", 3]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (12.7ms)[0m  [1m[35mDROP TABLE "blogs"[0m
+  [1m[35m (15.4ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar, "status" integer DEFAULT 0, "topic_id" integer)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_blogs_on_slug" ON "blogs" ("slug")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+[0m
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE  INDEX "index_blogs_on_topic_id" ON "blogs" ("topic_id")[0m
+  [1m[35m (17.0ms)[0m  [1m[35mDROP TABLE "friendly_id_slugs"[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(50), "scope" varchar, "created_at" datetime)[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")[0m
+  [1m[35m (12.9ms)[0m  [1m[35mDROP TABLE "portfolios"[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "portfolios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "subtitle" varchar, "body" text, "main_image" text, "thumb_image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "position" integer)[0m
+  [1m[35m (12.6ms)[0m  [1m[35mDROP TABLE "skills"[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "skills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "percent_utilized" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "badge" text)[0m
+  [1m[35m (11.0ms)[0m  [1m[35mDROP TABLE "technologies"[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "technologies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "portfolio_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE  INDEX "index_technologies_on_portfolio_id" ON "technologies" ("portfolio_id")[0m
+  [1m[35m (12.5ms)[0m  [1m[35mDROP TABLE "topics"[0m
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (12.5ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "roles" varchar)[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (15.7ms)[0m  [1m[35mDROP TABLE "blogs"[0m
+  [1m[35m (13.7ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "slug" varchar, "status" integer DEFAULT 0, "topic_id" integer)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mselect sqlite_version(*)[0m
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_blogs_on_slug" ON "blogs" ("slug")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_blogs_on_slug' AND type='index'
+[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE  INDEX "index_blogs_on_topic_id" ON "blogs" ("topic_id")[0m
+  [1m[35m (11.4ms)[0m  [1m[35mDROP TABLE "friendly_id_slugs"[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "slug" varchar NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" varchar(50), "scope" varchar, "created_at" datetime)[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_id" ON "friendly_id_slugs" ("sluggable_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_sluggable_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope' AND type='index'
+[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE  INDEX "index_friendly_id_slugs_on_sluggable_type" ON "friendly_id_slugs" ("sluggable_type")[0m
+  [1m[35m (10.7ms)[0m  [1m[35mDROP TABLE "portfolios"[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "portfolios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "subtitle" varchar, "body" text, "main_image" text, "thumb_image" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "position" integer)[0m
+  [1m[35m (9.8ms)[0m  [1m[35mDROP TABLE "skills"[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "skills" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "percent_utilized" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "badge" text)[0m
+  [1m[35m (12.5ms)[0m  [1m[35mDROP TABLE "technologies"[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "technologies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "portfolio_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE  INDEX "index_technologies_on_portfolio_id" ON "technologies" ("portfolio_id")[0m
+  [1m[35m (11.7ms)[0m  [1m[35mDROP TABLE "topics"[0m
+  [1m[35m (10.2ms)[0m  [1m[35mCREATE TABLE "topics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (11.5ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "roles" varchar)[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Topic 0"], ["created_at", "2017-08-09 16:12:49.981285"], ["updated_at", "2017-08-09 16:12:49.981285"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Topic 1"], ["created_at", "2017-08-09 16:12:49.998636"], ["updated_at", "2017-08-09 16:12:49.998636"]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "topics" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Topic 2"], ["created_at", "2017-08-09 16:12:50.013342"], ["updated_at", "2017-08-09 16:12:50.013342"]]
+  [1m[35m (9.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.3ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-0"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 0"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.165246"], ["updated_at", "2017-08-09 16:12:50.165246"], ["slug", "my-blog-post-0"], ["topic_id", 3]]
+  [1m[35m (14.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 1"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.194846"], ["updated_at", "2017-08-09 16:12:50.194846"], ["slug", "my-blog-post-1"], ["topic_id", 3]]
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-2"], ["LIMIT", 1]]
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 2"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.219995"], ["updated_at", "2017-08-09 16:12:50.219995"], ["slug", "my-blog-post-2"], ["topic_id", 3]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-3"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 3"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.242741"], ["updated_at", "2017-08-09 16:12:50.242741"], ["slug", "my-blog-post-3"], ["topic_id", 3]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-4"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 4"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.265796"], ["updated_at", "2017-08-09 16:12:50.265796"], ["slug", "my-blog-post-4"], ["topic_id", 3]]
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-5"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 5"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.291433"], ["updated_at", "2017-08-09 16:12:50.291433"], ["slug", "my-blog-post-5"], ["topic_id", 3]]
+  [1m[35m (12.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-6"], ["LIMIT", 1]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 6"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.315131"], ["updated_at", "2017-08-09 16:12:50.315131"], ["slug", "my-blog-post-6"], ["topic_id", 3]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-7"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 7"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.339755"], ["updated_at", "2017-08-09 16:12:50.339755"], ["slug", "my-blog-post-7"], ["topic_id", 3]]
+  [1m[35m (12.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-8"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 8"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.363823"], ["updated_at", "2017-08-09 16:12:50.363823"], ["slug", "my-blog-post-8"], ["topic_id", 3]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTopic Load (0.2ms)[0m  [1m[34mSELECT  "topics".* FROM "topics" ORDER BY "topics"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBlog Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "blogs" WHERE ("blogs"."id" IS NOT NULL) AND "blogs"."slug" = ? LIMIT ?[0m  [["slug", "my-blog-post-9"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at", "slug", "topic_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "My Blog Post 9"], ["body", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"], ["created_at", "2017-08-09 16:12:50.387553"], ["updated_at", "2017-08-09 16:12:50.387553"], ["slug", "my-blog-post-9"], ["topic_id", 3]]
+  [1m[35m (13.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails 0"], ["percent_utilized", 15], ["created_at", "2017-08-09 16:12:50.433459"], ["updated_at", "2017-08-09 16:12:50.433459"]]
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails 1"], ["percent_utilized", 15], ["created_at", "2017-08-09 16:12:50.454661"], ["updated_at", "2017-08-09 16:12:50.454661"]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails 2"], ["percent_utilized", 15], ["created_at", "2017-08-09 16:12:50.472694"], ["updated_at", "2017-08-09 16:12:50.472694"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails 3"], ["percent_utilized", 15], ["created_at", "2017-08-09 16:12:50.487405"], ["updated_at", "2017-08-09 16:12:50.487405"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "skills" ("title", "percent_utilized", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Rails 4"], ["percent_utilized", 15], ["created_at", "2017-08-09 16:12:50.520065"], ["updated_at", "2017-08-09 16:12:50.520065"]]
+  [1m[35m (10.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 0"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.556213"], ["updated_at", "2017-08-09 16:12:50.556213"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 1"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.574439"], ["updated_at", "2017-08-09 16:12:50.574439"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (10.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 2"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.589325"], ["updated_at", "2017-08-09 16:12:50.589325"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 3"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.606500"], ["updated_at", "2017-08-09 16:12:50.606500"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 4"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.622801"], ["updated_at", "2017-08-09 16:12:50.622801"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 5"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.639883"], ["updated_at", "2017-08-09 16:12:50.639883"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 6"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.658983"], ["updated_at", "2017-08-09 16:12:50.658983"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (10.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 7"], ["subtitle", "Ruby on Rails"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.677199"], ["updated_at", "2017-08-09 16:12:50.677199"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "subtitle", "body", "created_at", "updated_at", "main_image", "thumb_image") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Portfolio title: 0"], ["subtitle", "Angular"], ["body", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."], ["created_at", "2017-08-09 16:12:50.695491"], ["updated_at", "2017-08-09 16:12:50.695491"], ["main_image", nil], ["thumb_image", nil]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" ORDER BY "portfolios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Technology Technology"], ["portfolio_id", 9], ["created_at", "2017-08-09 16:12:50.742096"], ["updated_at", "2017-08-09 16:12:50.742096"]]
+  [1m[35m (16.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" ORDER BY "portfolios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Technology Technology"], ["portfolio_id", 9], ["created_at", "2017-08-09 16:12:50.765704"], ["updated_at", "2017-08-09 16:12:50.765704"]]
+  [1m[35m (11.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" ORDER BY "portfolios"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "technologies" ("name", "portfolio_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Technology Technology"], ["portfolio_id", 9], ["created_at", "2017-08-09 16:12:50.782768"], ["updated_at", "2017-08-09 16:12:50.782768"]]
+  [1m[35m (10.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 16:13:05 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (7.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.6ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (1.3ms)
+Completed 200 OK in 1063ms (Views: 990.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.139 at 2017-08-09 16:13:31 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (37.7ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.5ms)
+  Rendered shared/_portfolio_footer.html.erb (1.0ms)
+Completed 200 OK in 477ms (Views: 464.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/portfolio/1" for 205.122.46.139 at 2017-08-09 16:13:38 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.5ms)
+  Rendered shared/_portfolio_footer.html.erb (0.9ms)
+Completed 200 OK in 295ms (Views: 290.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 16:18:06 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (13.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.7ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (1.4ms)
+Completed 200 OK in 518ms (Views: 511.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolio/1" for 205.122.46.139 at 2017-08-09 16:18:10 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.7ms)
+  Rendered shared/_portfolio_footer.html.erb (0.9ms)
+Completed 200 OK in 415ms (Views: 409.4ms | ActiveRecord: 0.7ms)
+
+
