@@ -6,7 +6,20 @@
 
     <div class="col-md-5">
       <h1><%= @portfolio_item.title %></h1>
-
+      <% if logged_in?(:site_admin) %>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="">
+              <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-outline-warning btn-lg' %>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="">
+              <%= link_to "Delete Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-outline-danger btn-lg' %>
+            </div>
+          </div>  
+        </div>  
+      <% end %>
       <hr>
 
       <em><%= @portfolio_item.subtitle %></em>

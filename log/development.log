@@ -40329,3 +40329,925 @@ Processing by PortfoliosController#show as HTML
 Completed 200 OK in 415ms (Views: 409.4ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/portfolio/1" for 205.122.46.139 at 2017-08-09 17:50:38 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (41.3ms)
+  Rendered shared/_portfolio_nav.html.erb (2.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (1.8ms)
+Completed 200 OK in 2486ms (Views: 2366.8ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/portfolios" for 205.122.46.139 at 2017-08-09 17:50:42 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (10.0ms)
+  Rendered shared/_portfolio_nav.html.erb (2.3ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (1.7ms)
+Completed 200 OK in 528ms (Views: 521.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolio/1" for 205.122.46.139 at 2017-08-09 17:50:45 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 1]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.6ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (1.2ms)
+Completed 200 OK in 378ms (Views: 373.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:50:48 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (95.2ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 514ms (Views: 507.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:50:49 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+  Rendered shared/_application_nav.html.erb (2.8ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 527ms (Views: 524.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:50:56 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHCtBsbJEvv9wOV4x8rKiLrsyiQ2NAo038J8/bmD0SgUr5Uf4oh5D9o3xBzYHsT8x7rff4/lXz6cUQiSEZVFDg==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHCtBsbJEvv9wOV4x8rKiLrsyiQ2NAo038J8/bmD0SgUr5Uf4oh5D9o3xBzYHsT8x7rff4/lXz6cUQiSEZVFDg==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+  Rendered shared/_application_nav.html.erb (2.5ms)
+  Rendered shared/_application_footer.html.erb (1.2ms)
+Completed 200 OK in 715ms (Views: 543.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:51:03 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4fxBEQFKDklg+Oqx9KgvYMYUAG22sYab8lCKjM3rH639I3kIJQtlvUcPy9XrfCEUu0IVNg9g05Gxw/7jZf2Liw==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4fxBEQFKDklg+Oqx9KgvYMYUAG22sYab8lCKjM3rH639I3kIJQtlvUcPy9XrfCEUu0IVNg9g05Gxw/7jZf2Liw==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.6ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 593ms (Views: 429.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:51:21 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PDE3/sFpo8XeEJ7wfOZouGzrOIi8JI1q+eNqZ8GNNl8g7g/n5SjIMfnnv5RjMmbMEb0t0wX12GC6cB4IaZuieQ==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PDE3/sFpo8XeEJ7wfOZouGzrOIi8JI1q+eNqZ8GNNl8g7g/n5SjIMfnnv5RjMmbMEb0t0wX12GC6cB4IaZuieQ==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.6ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (1.2ms)
+Completed 200 OK in 693ms (Views: 533.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/password/new" for 205.122.46.139 at 2017-08-09 17:51:27 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:51:39 +0000
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:51:39 +0000
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:51:39 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/passwords/new.html.erb within layouts/application (15.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 1004ms (Views: 989.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendered shared/_application_nav.html.erb (1.3ms)
+  Rendered shared/_application_nav.html.erb (0.8ms)
+  Rendered shared/_application_footer.html.erb (0.1ms)
+  Rendered shared/_application_footer.html.erb (0.1ms)
+Completed 200 OK in 1040ms (Views: 1037.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1030ms (Views: 1028.3ms | ActiveRecord: 0.0ms)
+
+
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+  Rendered shared/_application_footer.html.erb (0.1ms)
+Completed 200 OK in 340ms (Views: 312.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:51:48 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.5ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 437ms (Views: 430.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:51:51 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (1.3ms)
+Completed 200 OK in 499ms (Views: 496.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:51:57 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+  Rendered shared/_application_footer.html.erb (1.1ms)
+Completed 200 OK in 462ms (Views: 460.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:52:09 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jZIcNa8KBFMSod8p0QX8RJQHemOdB+AcVPyf85WNwMSRTSQsi0tvpzVW/k3O0fIw6VFvOCTWtRYXb+ucPZtU4g==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jZIcNa8KBFMSod8p0QX8RJQHemOdB+AcVPyf85WNwMSRTSQsi0tvpzVW/k3O0fIw6VFvOCTWtRYXb+ucPZtU4g==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.9ms)
+  Rendered shared/_application_nav.html.erb (2.2ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 819ms (Views: 649.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:52:15 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YGbVDN+yw3jVtdaraC3UBzEGZrMe6TB6AtbAl5tdvC18ue0V+/OojPJC9893+dpzTFBz6Kc4ZXBBRbT4M0soCw==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.5ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YGbVDN+yw3jVtdaraC3UBzEGZrMe6TB6AtbAl5tdvC18ue0V+/OojPJC9893+dpzTFBz6Kc4ZXBBRbT4M0soCw==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.2ms)
+  Rendered shared/_application_nav.html.erb (6.8ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 1272ms (Views: 886.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:52:27 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oU1MHt8xWJiWqy8pfF8XAbibm1d2d3p1tODQ6Kh5nKS9knQH+3AzbLFcDk1jixl1xc2ODM+mL3/3c6SHAG8Igg==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 1.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oU1MHt8xWJiWqy8pfF8XAbibm1d2d3p1tODQ6Kh5nKS9knQH+3AzbLFcDk1jixl1xc2ODM+mL3/3c6SHAG8Igg==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 757ms (Views: 610.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:52:55 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UX2AgATrA45Wz0GXZU/MHcM+zNi+sDq+g06LWsISeuNNoriZIKpoenE4YPN6m8JpvmjZgwdhb7TA3f81agTuxQ==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "crazylady@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UX2AgATrA45Wz0GXZU/MHcM+zNi+sDq+g06LWsISeuNNoriZIKpoenE4YPN6m8JpvmjZgwdhb7TA3f81agTuxQ==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.9ms)
+Completed 200 OK in 739ms (Views: 560.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:52:59 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FCHunWPqc3oPU07Y+925HlwzPcLI7RTfy7Jwz3UvQMII/taER6sYjiikb7zkCbdqIWUomXE8QdWIIQSg3TnU5A==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FCHunWPqc3oPU07Y+925HlwzPcLI7RTfy7Jwz3UvQMII/taER6sYjiikb7zkCbdqIWUomXE8QdWIIQSg3TnU5A==", "user"=>{"email"=>"crazylady@got.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 317ms (Views: 314.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 205.122.46.139 at 2017-08-09 17:53:02 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (4.1ms)
+  Rendered shared/_application_nav.html.erb (2.6ms)
+  Rendered shared/_application_footer.html.erb (0.8ms)
+Completed 200 OK in 520ms (Views: 517.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:53:04 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered shared/_application_nav.html.erb (2.2ms)
+  Rendered shared/_application_footer.html.erb (0.8ms)
+Completed 200 OK in 643ms (Views: 640.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about-me" for 205.122.46.139 at 2017-08-09 17:53:09 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (3.7ms)
+  Rendered shared/_application_nav.html.erb (1.9ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 301ms (Views: 299.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 205.122.46.139 at 2017-08-09 17:53:09 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (74.0ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 382ms (Views: 378.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:53:23 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.7ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (1.0ms)
+Completed 200 OK in 555ms (Views: 551.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.139 at 2017-08-09 17:53:26 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:53:37 +0000
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:53:37 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering pages/home.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+  Rendered shared/_application_nav.html.erb (1.5ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+  Rendered shared/_application_footer.html.erb (0.1ms)
+Completed 200 OK in 867ms (Views: 862.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 868ms (Views: 866.1ms | ActiveRecord: 0.0ms)
+
+
+  Rendered shared/_application_nav.html.erb (0.8ms)
+  Rendered shared/_application_footer.html.erb (0.1ms)
+Completed 200 OK in 1047ms (Views: 1044.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 205.122.46.139 at 2017-08-09 17:53:44 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.1ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 372ms (Views: 370.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:53:47 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7KC+OY4kUzGH7Qnj2tlUcR5DO79X7UM2MD2Dq8K6mqjwf4YgqmU4xaAaKIfFDVoFYxUu5O48FjxzrvfEaqwOjg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 120ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7KC+OY4kUzGH7Qnj2tlUcR5DO79X7UM2MD2Dq8K6mqjwf4YgqmU4xaAaKIfFDVoFYxUu5O48FjxzrvfEaqwOjg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (18.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (207.6ms)
+  Rendered shared/_application_nav.html.erb (3.6ms)
+  Rendered shared/_application_footer.html.erb (1.5ms)
+Completed 200 OK in 5718ms (Views: 5673.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.139 at 2017-08-09 17:54:12 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/N7sBqUt4cuk9mkdbGHqKQifIEjNXgn0ly1nH/SzbZPgAdQfgWyKP4MBSHlzteRddck1E3SPXP7UvhNwXKX5tQ==", "user"=>{"email"=>"thebestever@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (7.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "thebestever@got.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 7.4ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/N7sBqUt4cuk9mkdbGHqKQifIEjNXgn0ly1nH/SzbZPgAdQfgWyKP4MBSHlzteRddck1E3SPXP7UvhNwXKX5tQ==", "user"=>{"email"=>"thebestever@got.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.2ms)
+  Rendered shared/_application_nav.html.erb (2.3ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 756ms (Views: 523.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 205.122.46.139 at 2017-08-09 17:54:57 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (8.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.1ms)
+  Rendered shared/_application_nav.html.erb (2.8ms)
+  Rendered shared/_application_footer.html.erb (0.4ms)
+Completed 200 OK in 1112ms (Views: 1107.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 205.122.46.139 at 2017-08-09 17:55:40 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aTlGDt7esDaO49bgwajfFXX+pDhHr53cbfeOj2bPT6B15n4X+p/bwqkU94TefNFhCKixY/5+yNYuZPrgztnbhg==", "user"=>{"email"=>"test@test.com", "name"=>"Luigi Board", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (3.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "roles") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "test@test.com"], ["encrypted_password", "$2a$11$Aw4kGQ859v26XLkC6SdEcOaPqCzgo1OrbOgu.e8JA/dZ/LnK/irom"], ["name", "Luigi Board"], ["created_at", "2017-08-09 17:55:40.484841"], ["updated_at", "2017-08-09 17:55:40.484841"], ["roles", "user"]]
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-08-09 17:55:40.568569"], ["last_sign_in_at", "2017-08-09 17:55:40.568569"], ["current_sign_in_ip", "205.122.46.139"], ["last_sign_in_ip", "205.122.46.139"], ["updated_at", "2017-08-09 17:55:40.571039"], ["id", 1]]
+  [1m[35m (20.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 517ms (ActiveRecord: 36.9ms)
+
+
+Started GET "/" for 205.122.46.139 at 2017-08-09 17:55:40 +0000
+Cannot render console from 205.122.46.139! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+  Rendered shared/_application_nav.html.erb (1.1ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 708ms (Views: 703.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 205.122.46.135 at 2017-08-10 13:52:26 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (57.0ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 1399ms (Views: 1356.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/login" for 205.122.46.135 at 2017-08-10 13:52:43 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+Started GET "/login" for 205.122.46.135 at 2017-08-10 13:52:59 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (48.8ms)
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (60.4ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 897ms (Views: 895.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered shared/_application_nav.html.erb (1.3ms)
+  Rendered shared/_application_footer.html.erb (0.1ms)
+Completed 200 OK in 913ms (Views: 906.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 205.122.46.135 at 2017-08-10 13:53:13 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uu/7LQcGlJPQ6WXzdvuSjEtVU1QnlOegyQAF6XgJR4Tewyy3Mrs2z1u9whkog/XGzIvkmo5hp/EaTUpfEk/jtQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-08-10 13:53:13.537641"], ["current_sign_in_ip", "205.122.46.135"], ["sign_in_count", 2], ["updated_at", "2017-08-10 13:53:13.539633"], ["id", 1]]
+  [1m[35m (15.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/
+Completed 302 Found in 199ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/" for 205.122.46.135 at 2017-08-10 13:53:13 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (3.4ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+  Rendered shared/_application_footer.html.erb (0.3ms)
+Completed 200 OK in 336ms (Views: 334.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 13:53:20 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (3.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (20.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.6ms)
+  Rendered shared/_portfolio_footer.html.erb (1.1ms)
+Completed 200 OK in 459ms (Views: 426.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 13:53:41 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (5.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (10.8ms)
+  Rendered shared/_portfolio_nav.html.erb (1.2ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 514ms (Views: 506.8ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/portfolios/sort" for 205.122.46.135 at 2017-08-10 13:53:52 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#sort as */*
+  Parameters: {"order"=>{"0"=>{"id"=>"2", "position"=>"1"}, "1"=>{"id"=>"3", "position"=>"2"}, "2"=>{"id"=>"1", "position"=>"3"}, "3"=>{"id"=>"4", "position"=>"4"}, "4"=>{"id"=>"5", "position"=>"5"}, "5"=>{"id"=>"6", "position"=>"6"}, "6"=>{"id"=>"7", "position"=>"7"}, "7"=>{"id"=>"8", "position"=>"8"}, "8"=>{"id"=>"9", "position"=>"9"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 1], ["updated_at", "2017-08-10 13:53:52.191494"], ["id", 2]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 2], ["updated_at", "2017-08-10 13:53:52.208288"], ["id", 3]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 3], ["updated_at", "2017-08-10 13:53:52.224484"], ["id", 1]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 4], ["updated_at", "2017-08-10 13:53:52.240659"], ["id", 4]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 5], ["updated_at", "2017-08-10 13:53:52.255268"], ["id", 5]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 6], ["updated_at", "2017-08-10 13:53:52.274518"], ["id", 6]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 7], ["updated_at", "2017-08-10 13:53:52.292740"], ["id", 7]]
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 8], ["updated_at", "2017-08-10 13:53:52.318326"], ["id", 8]]
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "portfolios" SET "position" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["position", 9], ["updated_at", "2017-08-10 13:53:52.339452"], ["id", 9]]
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: `:nothing` option is deprecated and will be removed in Rails 5.1. Use `head` method to respond with empty response body. (called from sort at /home/ubuntu/workspace/devCPortfolio/app/controllers/portfolios_controller.rb:15)
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 184ms (Views: 3.4ms | ActiveRecord: 104.8ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 13:53:53 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (2.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (5.8ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_footer.html.erb (1.2ms)
+Completed 200 OK in 439ms (Views: 433.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios/new" for 205.122.46.135 at 2017-08-10 13:54:00 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/new.html.erb within layouts/portfolio
+  Rendered portfolios/_form.html.erb (14.3ms)
+  Rendered portfolios/new.html.erb within layouts/portfolio (16.5ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 395ms (Views: 350.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 13:54:11 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (4.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 369ms (Views: 361.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolio/2/edit" for 205.122.46.135 at 2017-08-10 13:55:42 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/portfolio/2/edit"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [38 times] (19.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.3ms)
+Started GET "/portfolios/2/edit" for 205.122.46.135 at 2017-08-10 13:56:04 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/_form.html.erb (6.8ms)
+  Rendered portfolios/edit.html.erb within layouts/portfolio (8.3ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 412ms (Views: 400.2ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/portfolios/2" for 205.122.46.135 at 2017-08-10 13:56:20 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BjV1xbPn8wAKWSifLZXUZ5tOpzCja9nrXUHo0KBwZDKZQM8xRG4fne9XCkakaph512QHIBvrdWSn7jGraNGTRg==", "portfolio"=>{"title"=>"Portfolio title: 1", "subtitle"=>"Ruby on Rails", "main_image"=>#<ActionDispatch::Http::UploadedFile:0x007fbf109467f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170810-22572-1w6zvxs.jpg>, @original_filename="VideoStillImage.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"portfolio[main_image]\"; filename=\"VideoStillImage.jpg\"\r\nContent-Type: image/jpeg\r\n">, "thumb_image"=>#<ActionDispatch::Http::UploadedFile:0x007fbf109467a0 @tempfile=#<Tempfile:/tmp/RackMultipart20170810-22572-12v88dj.jpg>, @original_filename="matrix.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"portfolio[thumb_image]\"; filename=\"matrix.jpg\"\r\nContent-Type: image/jpeg\r\n">, "body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}, "commit"=>"Save Portfolio Item", "id"=>"2"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "portfolios" SET "main_image" = ?, "thumb_image" = ?, "updated_at" = ? WHERE "portfolios"."id" = ?[0m  [["main_image", "VideoStillImage.jpg"], ["thumb_image", "matrix.jpg"], ["updated_at", "2017-08-10 13:56:20.533042"], ["id", 2]]
+  [1m[35m (20.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://axtrworkspace-austinxtreme.c9users.io/portfolios
+Completed 302 Found in 1188ms (ActiveRecord: 21.3ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 13:56:21 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (3.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.7ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 291ms (Views: 286.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 14:03:12 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 390ms (Views: 383.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:03:14 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 342ms (Views: 338.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:03:37 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.4ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (4.8ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_footer.html.erb (0.9ms)
+Completed 200 OK in 432ms (Views: 425.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:05:22 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (5.2ms)
+  Rendered shared/_portfolio_nav.html.erb (0.9ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 370ms (Views: 364.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:06:49 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.1ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (4.8ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 305ms (Views: 299.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:09:02 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (6.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 327ms (Views: 319.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:09:16 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.2ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (4.5ms)
+  Rendered shared/_portfolio_nav.html.erb (1.3ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 334ms (Views: 329.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:13:43 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.2ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (6.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.3ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 638ms (Views: 628.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 205.122.46.135 at 2017-08-10 14:49:37 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/devise_whitelist.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devCPortfolio/app/controllers/concerns/default_page_content.rb:5)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (41.6ms)
+  Rendered shared/_application_nav.html.erb (7.6ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 19576ms (Views: 19506.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 205.122.46.135 at 2017-08-10 14:49:57 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (9.3ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+  Rendered shared/_application_footer.html.erb (2.1ms)
+Completed 200 OK in 1320ms (Views: 1316.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 14:50:08 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (6.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (29.7ms)
+  Rendered shared/_portfolio_nav.html.erb (1.2ms)
+  Rendered shared/_portfolio_footer.html.erb (0.9ms)
+Completed 200 OK in 629ms (Views: 601.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 14:50:28 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (6.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (22.3ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms)
+  Rendered shared/_portfolio_footer.html.erb (1.0ms)
+Completed 200 OK in 1137ms (Views: 1106.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/portfolios" for 205.122.46.135 at 2017-08-10 14:56:06 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [9 times] (4.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_footer.html.erb (1.0ms)
+Completed 200 OK in 476ms (Views: 470.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/portfolio/2" for 205.122.46.135 at 2017-08-10 14:56:09 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (48.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms)
+  Rendered shared/_portfolio_footer.html.erb (1.2ms)
+Completed 200 OK in 511ms (Views: 494.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/portfolios/2/edit" for 205.122.46.135 at 2017-08-10 14:56:23 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/_technology_fields.html.erb (3.1ms)
+  Rendered portfolios/_form.html.erb (151.0ms)
+  Rendered portfolios/edit.html.erb within layouts/portfolio (155.4ms)
+  Rendered shared/_portfolio_nav.html.erb (1.3ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 634ms (Views: 623.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/portfolios/2/edit" for 205.122.46.135 at 2017-08-10 14:56:27 +0000
+Cannot render console from 205.122.46.135! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = ?[0m  [["portfolio_id", 2]]
+  Rendered portfolios/_technology_fields.html.erb (1.6ms)
+  Rendered portfolios/_form.html.erb (11.9ms)
+  Rendered portfolios/edit.html.erb within layouts/portfolio (14.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.9ms)
+Completed 200 OK in 323ms (Views: 317.3ms | ActiveRecord: 0.8ms)
+
+
