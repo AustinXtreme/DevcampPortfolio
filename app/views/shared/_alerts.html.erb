@@ -1,0 +1,7 @@
+<% if flash[:alert] %>
+  <%= js add_gritter(flash[:alert], title: "Austin Tolman Portfolio", sticky: false, fade_out_speed: 10, time: 1700, :image => :progress) %>
+<% elsif flash[:error] %>
+  <%= js add_gritter(flash[:error], title: "Austin Tolman Portfolio", sticky: false, fade_out_speed: 10, time: 1700, :image => :progress) %>
+<% else %>
+  <%= js add_gritter(flash[:notice], title: "Austin Tolman Portfolio", sticky: false, fade_out_speed: 10, time: 1700, :image => :progress) %>
+<% end %>
